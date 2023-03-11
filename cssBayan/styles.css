@@ -63,8 +63,8 @@ body {
 
 .bayan-title {
 	font-weight: 700;
-	font-size: 0.9em;
-	margin-right: 5.3rem;
+	font-size: 0.8em;
+	margin-right: 7rem;
 	margin-top: 0.1vh;
 }
 .bayan-input:checked ~ .bayan-title {
@@ -75,7 +75,8 @@ body {
 	display: none;
 	margin-top: 1.5vh;
 	margin-left: 2em;
-	max-width: 70vw;
+	max-width: 62vw;
+	max-height: 62vh;
 }
 
 .bayan-input:checked ~ .bayan-mem {
@@ -84,5 +85,33 @@ body {
 
 .bayan-icon {
 	display: none;
-	margin-top: 0.3em;
+}
+
+@media (min-width: 820px) {
+	.header-title {
+		font-size: 2.5em;
+		margin-left: 1em;
+	}
+
+	.bayan-block {
+		border-top: 0.01em solid black;
+		margin: 0 auto;
+		max-width: 90vw;
+		max-height: 65vh;
+		margin-bottom: 1.3em;
+	}
+
+	.bayan-title {
+		font-weight: 700;
+		font-size: 2em;
+		margin-right: 19rem;
+		margin-top: 0.1vh;
+	}
+
+	.bayan-mem {
+		margin-top: 1.5vh;
+		margin-left: 10em;
+		max-width: 55vw;
+		max-height: 55vh;
+	}
 }
