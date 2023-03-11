@@ -1,0 +1,88 @@
+@font-face {
+	font-display: swap;
+	font-family: "Alexandria";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/alexandria-v1-latin-300.eot");
+	src: url("../fonts/alexandria-v1-latin-300.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/alexandria-v1-latin-300.woff2") format("woff2"), url("../fonts/alexandria-v1-latin-300.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/alexandria-v1-latin-300.ttf") format("truetype"), url("../fonts/alexandria-v1-latin-300.svg#Alexandria") format("svg"); /* Legacy iOS */
+}
+/* alexandria-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Alexandria";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/alexandria-v1-latin-regular.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/alexandria-v1-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/alexandria-v1-latin-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/alexandria-v1-latin-regular.woff") format("woff"), /* Modern Browsers */ url("../fonts/alexandria-v1-latin-regular.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/alexandria-v1-latin-regular.svg#Alexandria") format("svg"); /* Legacy iOS */
+}
+/* alexandria-700 - latin */
+@font-face {
+	font-display: swap;
+	font-family: "Alexandria";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/alexandria-v1-latin-700.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/alexandria-v1-latin-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/alexandria-v1-latin-700.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("../fonts/alexandria-v1-latin-700.woff") format("woff"), /* Modern Browsers */ url("../fonts/alexandria-v1-latin-700.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("../fonts/alexandria-v1-latin-700.svg#Alexandria") format("svg"); /* Legacy iOS */
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: Alexandria, sans-serif;
+}
+
+.header {
+}
+.header-title {
+	font-size: 1.7em;
+	margin-left: 3em;
+}
+.bayan-block {
+	border-top: 0.01em solid black;
+	margin: 0 auto;
+	max-width: 90vw;
+	max-height: 25vh;
+	margin-bottom: 1.3em;
+}
+.block-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.bayan-input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0;
+	height: 0;
+}
+
+.bayan-title {
+	font-weight: 700;
+	font-size: 0.9em;
+	margin-right: 5.3rem;
+	margin-top: 0.1vh;
+}
+.bayan-input:checked ~ .bayan-title {
+	color: orange;
+}
+
+.bayan-mem {
+	display: none;
+	margin-top: 1.5vh;
+	margin-left: 2em;
+	max-width: 70vw;
+}
+
+.bayan-input:checked ~ .bayan-mem {
+	display: block;
+}
+
+.bayan-icon {
+	display: none;
+	margin-top: 0.3em;
+}
