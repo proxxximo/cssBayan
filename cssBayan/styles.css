@@ -32,27 +32,21 @@
 
 body {
 	box-sizing: border-box;
-	margin: 0 auto;
-	font-family: Alexandria, sans-serif;
+	font-family: "Alexandria", sans-serif;
 }
 
-.header {
-}
 .header-title {
 	font-size: 1.7em;
-	margin-left: 3em;
+	margin: auto;
 }
 .bayan-block {
 	border-top: 0.01em solid black;
 	margin: 0 auto;
 	max-width: 90vw;
 	max-height: 25vh;
-	margin-bottom: 1.3em;
+	margin-bottom: 1em;
 }
 .block-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 }
 .bayan-input {
 	-webkit-appearance: none;
@@ -62,35 +56,43 @@ body {
 }
 
 .bayan-title {
-	font-weight: 700;
-	font-size: 0.8em;
-	margin-right: 7rem;
-	margin-top: 0.1vh;
+	font-weight: 500;
+	font-size: 0.7em;
+	margin-right: 13em;
 }
 .bayan-input:checked ~ .bayan-title {
 	color: orange;
 }
 
 .bayan-mem {
-	display: none;
-	margin-top: 1.5vh;
-	margin-left: 2em;
-	max-width: 62vw;
-	max-height: 62vh;
+	opacity: 0;
+	height: 0;
+	margin: 0 auto;
+	max-width: 45vw;
+	max-height: 45vh;
+	transition: 1 all ease-in-out;
 }
 
-.bayan-input:checked ~ .bayan-mem {
-	display: block;
+.bayan-input:checked + label .bayan-mem {
+	opacity: 1;
+	height: 100%;
 }
 
 .bayan-icon {
-	display: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bx-plus {
+	/* display: none; */
+	font-size: 1em;
 }
 
 @media (min-width: 820px) {
 	.header-title {
 		font-size: 2.5em;
-		margin-left: 1em;
+		margin-left: 0.8em;
 	}
 
 	.bayan-block {
@@ -103,15 +105,55 @@ body {
 
 	.bayan-title {
 		font-weight: 700;
-		font-size: 2em;
-		margin-right: 19rem;
+		font-size: 1.5em;
+		margin-right: 25.5rem;
 		margin-top: 0.1vh;
 	}
 
 	.bayan-mem {
-		margin-top: 1.5vh;
 		margin-left: 10em;
 		max-width: 55vw;
 		max-height: 55vh;
 	}
+
+	.bx-plus {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 1919px) {
+	.bayan-wrapper {
+		margin: 0 auto;
+		width: 1500px;
+	}
+	.header-title {
+		font-size: 50px;
+		font-weight: bold;
+		margin-left: 110px;
+	}
+
+	.bayan-block {
+		border-top: 1px solid black;
+		margin: 0 auto;
+		max-width: 1280px;
+		max-height: 700px;
+		margin-bottom: 1.3em;
+	}
+
+	.bayan-title {
+		font-weight: 700;
+		font-size: 28px;
+		text-align: start;
+		/* margin-right: 900px; */
+		margin-top: 10px;
+	}
+
+	.bayan-mem {
+		margin: auto;
+		width: 42vh;
+		height: 42vh;
+	}
+}
+
+@media (min-width: 2880px) {
 }
