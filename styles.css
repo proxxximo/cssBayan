@@ -71,15 +71,24 @@ body {
 }
 
 .bayan-mem {
-	display: none;
+	opacity: 0;
 	margin-left: 5em;
-	max-width: 35vw;
-	max-height: 35vh;
-	transition: 1 all;
+	width: 0;
+	height: 0;
 }
 
 .bayan-input:checked + label .bayan-mem {
-	display: block;
+	opacity: 1;
+
+	width: 40%;
+	height: 40%;
+}
+
+.bayan-block:hover .bayan-input + label .bayan-mem {
+	opacity: 1;
+	width: 40%;
+	height: 40%;
+	transition: opacity 2s ease;
 }
 
 .bx-plus {
@@ -155,6 +164,6 @@ body {
 	.bayan-mem {
 		margin-left: 350px;
 		width: 45vh;
-		height: 30vh;
+		height: 45vh;
 	}
 }
