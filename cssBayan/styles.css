@@ -87,8 +87,11 @@ body {
 	font-size: 1em;
 }
 
-.bayan-wrapper:hover .bx-plus {
+.bayan-wrapper:hover label .bx-plus {
 	display: block;
+}
+.bayan-input:checked + label .bx-plus {
+	transform: rotate(45deg);
 }
 
 @media (min-width: 820px) {
