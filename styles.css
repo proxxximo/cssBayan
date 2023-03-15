@@ -51,8 +51,9 @@ body {
 .bayan-input {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 0;
+	width: 100vw;
 	height: 0;
+	cursor: pointer;
 }
 
 .bayan-icon {
@@ -79,7 +80,6 @@ body {
 
 .bayan-input:checked + label .bayan-mem {
 	opacity: 1;
-
 	width: 40%;
 	height: 40%;
 }
@@ -98,6 +98,10 @@ body {
 
 .bayan-wrapper:hover label .bx-plus {
 	display: block;
+}
+
+.bayan-block:hover .bayan-input + label .bx-plus {
+	transform: rotate(45deg);
 }
 .bayan-input:checked + label .bx-plus {
 	transform: rotate(45deg);
