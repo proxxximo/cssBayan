@@ -103,6 +103,7 @@ body {
 .bayan-block:hover .bayan-input + label .bx-plus {
 	transform: rotate(45deg);
 }
+
 .bayan-input:checked + label .bx-plus {
 	transform: rotate(45deg);
 }
