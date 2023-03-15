@@ -1,1 +1,1 @@
-https://proxxximo.github.io/cssBayan/cssBayan/index.html
+https://proxxximo.github.io/cssBayan/
