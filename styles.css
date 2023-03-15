@@ -37,7 +37,8 @@ body {
 
 .header-title {
 	font-size: 1.7em;
-	margin: auto;
+	margin: 0;
+	padding-left: 0.3em;
 }
 
 .bayan-block {
@@ -74,18 +75,21 @@ body {
 .bayan-mem {
 	opacity: 0;
 	margin-left: 5em;
+	visibility: hidden;
 	width: 0;
 	height: 0;
 }
 
 .bayan-input:checked + label .bayan-mem {
 	opacity: 1;
+	visibility: visible;
 	width: 40%;
 	height: 40%;
 }
 
 .bayan-block:hover .bayan-input + label .bayan-mem {
 	opacity: 1;
+	visibility: visible;
 	width: 40%;
 	height: 40%;
 	transition: opacity 2s ease;
@@ -111,7 +115,7 @@ body {
 @media (min-width: 820px) {
 	.header-title {
 		font-size: 2.5em;
-		margin-left: 0.8em;
+		margin-left: 0.5em;
 	}
 
 	.bayan-block {
@@ -143,31 +147,27 @@ body {
 @media (min-width: 1920px) {
 	.bayan-wrapper {
 		margin: 0 auto;
-		width: 1500px;
+		width: 78vw;
 	}
 	.header-title {
-		font-size: 50px;
+		font-size: 3.2em;
 		font-weight: bold;
-		margin-left: 110px;
+		margin-left: 5em;
 	}
 
 	.bayan-block {
 		border-top: 1px solid black;
-
-		max-width: 1280px;
-		max-height: 450px;
-		margin-bottom: 20px;
+		width: 50vw;
+		max-height: 35vh;
 	}
 
 	.bayan-title {
 		font-weight: 700;
-		font-size: 28px;
-		text-align: start;
-		margin-top: 10px;
+		font-size: 1.7rem;
 	}
 
 	.bayan-mem {
-		margin-left: 350px;
+		margin-left: 20em;
 		width: 45vh;
 		height: 45vh;
 	}
